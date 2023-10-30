@@ -2425,3 +2425,80 @@ input[type=checkbox].error + label{
 		font-size: 16px;
 	}
 }
+
+.selectLang {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: #222;
+	font-size: 14px;
+}
+
+.selectLang::before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../images/russia.png);background-repeat: no-repeat;background-size: cover;background-position: center;
+	margin-right: 5px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.langMenu {
+	position: relative;
+}
+
+.langMenu ul {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	border: 1px solid #f9f9f9;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	display: none;
+	margin-top: 10px;
+	position: absolute;
+	top: 15px;
+	left: -15px;
+}
+
+.langMenu ul li a {
+	width: 125px;
+	display: block;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+}
+
+.langMenu ul li a:hover {
+	background-color: #F2F2F4;
+}
+
+.langMenu ul li a::before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+}
+
+.ru::before {
+	background: url(../images/russia.png);background-repeat: no-repeat;background-size: cover;background-position: center;
+}
+.en::before {
+	background: url(../images/eng.png);background-repeat: no-repeat;background-size: cover;background-position: center;
+}
+.uz::before {
+	background: url(../images/uzbekistan.png);background-repeat: no-repeat;background-size: cover;background-position: center;
+}
+
+.langMenu:hover ul {
+	display: inline-block;
+}
